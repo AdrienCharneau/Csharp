@@ -13,16 +13,12 @@ namespace LotteryDraw
            (available at openclassrooms.com) named "Réalisez un tirage 
            de loto" aka "Build your own Lottery Draw algorithm".
 
-        */
-
-
-        /* - What it does?
+            - What it does?
         
             When executed, this program will a open a console window 
             where 7 numbers ranging from 1 to 49 will be displayed. It 
             is important to note that all numbers are unique and not a
             single one of them is equal to any of the others.
-
         */
 
 
