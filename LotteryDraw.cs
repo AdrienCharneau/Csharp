@@ -16,8 +16,7 @@ namespace LotteryDraw
         
             When executed, this program will a open a console window 
             where 7 numbers ranging from 1 to 49 (included) will be 
-            displayed. It is important to note that all numbers are 
-            unique and not equal to any of the others.
+            displayed. All numbers also have unique values.
         */
 
 
