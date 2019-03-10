@@ -5,6 +5,8 @@ namespace LotteryDraw
 {
     class Program
     {
+        
+        
         static Random rndNumber = new Random();
         static int winNumber;
         static int[] lotteryTable = new int[7];
