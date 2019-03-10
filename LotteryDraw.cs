@@ -41,7 +41,6 @@ namespace LotteryDraw
         // random numbers ranging from 1 to 49 (included).
         static void Draw()
         {
-
             // Initialization of an int variable that counts how many 
             // winning numbers are contained inside 'lotteryTable'.
             int lotteryCounter = 0;
