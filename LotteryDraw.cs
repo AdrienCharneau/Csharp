@@ -53,5 +53,7 @@ namespace LotteryDraw
                 Console.WriteLine("Index Loto " + affichage + " = " + lotteryTable[x]);
             }
         }
+        
+        
     }
 }
