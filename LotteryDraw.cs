@@ -7,7 +7,8 @@ namespace LotteryDraw
     {
 
 
-        /* - What is this?
+        /* 
+            - What is this?
             
            This program is part of an exercice from an online C# course
            (available at openclassrooms.com) named "Réalisez un tirage 
