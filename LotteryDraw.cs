@@ -1,72 +1,57 @@
 using System;
 
 
-namespace OpenClassrooms
+namespace LotteryDraw
 {
     class Program
     {
-
-        static Random rnd = new Random();
+        static Random rndNumber = new Random();
         static int winNumber;
-        static int[] loto = new int[7];
-        static int compteur = 0;
+        static int[] lotteryTable = new int[7];
+        static int lotteryCounter = 0;
+
 
         static void Main(string[] args)
         {
-
-            Test();
+            Draw();
             Display();
-
         }
 
-        static void Test()
+
+        static void Draw()
         {
-            while (compteur < loto.Length)
+            while (lotteryCounter < lotteryTable.Length)
             {
-                //winNumber = rnd.Next(1, 8);
-                winNumber = rnd.Next(1, 50);
+                winNumber = rndNumber.Next(1, 50);
 
-
-                for (int numero = 0; numero < loto.Length; numero++)
+                for (int numero = 0; numero < lotteryTable.Length; numero++)
                 {
-
-                    if (loto[numero] == winNumber)
+                    if (lotteryTable[numero] == winNumber)
                     {
-
-                        //Console.WriteLine("Resultat = " + winNumber + " RETRY");
                         break;
-
                     }
-
-                    else if (numero == compteur)
+                    else if (numero == lotteryCounter)
                     {
-
-                        loto[compteur] = winNumber;
-                        compteur++;
-                        //Console.WriteLine("Tirage " + compteur + " = " + winNumber);
-                        //Console.WriteLine("Compteur = " + compteur);
+                        lotteryTable[lotteryCounter] = winNumber;
+                        lotteryCounter++;
                         break;
-
                     }
                     else
                     {
                         continue;
                     }
-
                 }
             }
-
         }
+
 
         static void Display()
         {
-
-            for (int x = 0; x < loto.Length; x++)
+            for (int x = 0; x < lotteryTable.Length; x++)
             {
                 int affichage = x + 1;
-                Console.WriteLine("Index Loto " + affichage + " = " + loto[x]);
+                Console.WriteLine("Index Loto " + affichage + " = " + lotteryTable[x]);
             }
-
         }
     }
 }
