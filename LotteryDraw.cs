@@ -64,8 +64,8 @@ namespace LotteryDraw
                     if (lotteryTable[i] == winNumber)
                     {
                         // At any moment, if a value is already present
-                        // in 'lotteryTable', the "for" loop breaks and 
-                        // we set 'winNumber' to a new random value.
+                        // in 'lotteryTable', we break and set 
+                        // 'winNumber' to a new random value.
                         break;
                     }
                     else if (i == lotteryCounter)
