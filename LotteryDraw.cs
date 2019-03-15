@@ -81,8 +81,8 @@ namespace LotteryDraw
                     else
                     {
                         // At any moment, if a value is not present in
-                        // 'lotteryTable', the "for" loop continues and
-                        // we check the next value present in the Array.
+                        // 'lotteryTable', we check the next value 
+                        // present in the Array.
                         continue;
                     }
                 }
